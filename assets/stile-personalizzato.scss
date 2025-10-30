@@ -1,6 +1,8 @@
 @import './scss/functions';
 @import './scss/variables';
 
+$cyan: #00ffea;
+
 $h7-font-size: $font-size-base * 0.8;
 $h8-font-size: $font-size-base * 0.6;
 $h9-font-size: $font-size-base * 0.4;
@@ -42,9 +44,9 @@ $btn-padding-x: 2.5rem;
 $grid-gutter-width: 0.5rem;
 
 $card-bg: $dark;
-$card-color: $info;
+$card-color: map-get($new-theme-colors, 'info');
 $card-border-radius: 2rem;
-$card-inner-border-radius: 2rem;
+$card-inner-border-radius: $card-border-radius;
 
 $new-grid-breakpoints: (
   3xl: 1600px,
